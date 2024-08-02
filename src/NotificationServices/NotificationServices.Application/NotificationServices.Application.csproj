@@ -7,11 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CQRS\Command\" />
     <Folder Include="CQRS\Get\" />
-    <Folder Include="Dependencyinjection\" />
-    <Folder Include="Dto\" />
-    <Folder Include="Interface\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NotificationServices.Domain\NotificationServices.Domain.csproj" />
+    <ProjectReference Include="..\Postgres.Application\Postgres.Application.csproj" />
   </ItemGroup>
 
 </Project>

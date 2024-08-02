@@ -15,4 +15,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NotificationServices.Application\NotificationServices.Application.csproj" />
+    <ProjectReference Include="..\Postgres.Application\Postgres.Application.csproj" />
+  </ItemGroup>
+
 </Project>
